@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reports</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <h1 id="title" class="title"> </h1><span><h1 class="active"></h1></span>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <!-- General Reports -->
+        <section id="report-header">
+            <div class="container-fluid">
+                <div class="row row-container-inner">
+                    <div class="col-md-12">
+                        <div class="report-header">
+                            <h1><span class="active">General </span>Reports</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid ccc-options">
+                <div class="row row-container-inner">
+                    <div class="col-md-9 orders-main-options">
+                        <div class="orange-button">
+                            <div class="orange-border">
+                                <a href="reports-downloadInvoices.html">Download Invoices</a>
+                            </div>
+                        </div>
+                        <div class="orange-button">
+                            <div class="orange-border">
+                                <a href="reports-nightly.html">Nightly Reports</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="download-image" src="images/general-reports.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Custom Reports -->
+        <section id="report-header">
+            <div class="container-fluid">
+                <div class="row row-container-inner">
+                    <div class="col-md-12">
+                        <div class="report-header">
+                            <h1><span class="active">Custom </span>Reports</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid ccc-options">
+                <div class="row row-container-inner">
+                    <div class="col-md-9 orders-main-options">
+                        <div class="orange-button">
+                            <div class="orange-border">
+                                <a href="reports-shipped.html">Shipped Orders</a>
+                            </div>
+                        </div>
+                        <div class="orange-button">
+                            <div class="orange-border">
+                                <a href="reports-inventory.html">Inventory With Lot #</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="download-image" src="images/custom-reports.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Code for Reports -->
+        <section class="mobile">
+            <div class="container-fluid ccc-options-mobile">
+                <div class="row row-container">
+                    <div class="ccc-buttons-mobile">
+                        <div class="report-header-mobile">
+                            <h1 class="t-transform_capital"><span class="active">General </span>Reports</h1>
+                        </div>
+                        <div class="orange-border ccc-button-mobile-receiving">
+                            <a class="order-a" href="reports-downloadInvoices.html">Download Invoices</a>
+                        </div>
+                        <div class="orange-border ccc-button-mobile-receiving">
+                            <a class="order-a" href="reports-nightly.html">Nightly Reports</a>
+                        </div>
+                        <div class="report-header-mobile">
+                            <h1><span class="active">Custom </span>Reports</h1>
+                        </div>
+                        <div class="orange-border ccc-button-mobile-receiving">
+                            <a class="order-a" href="reports-shipped.html">Shipped Orders</a>
+                        </div>
+                        <div class="orange-border ccc-button-mobile-receiving">
+                            <a class="order-a" href="reports-inventory.html">Inventory With Lot #</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Mobile Code -->
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-3.3.2.js"></script>
+
+        <!-- Script import for header -->
+        <script src="js/main.js"></script>
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

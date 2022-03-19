@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Customers -</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Account Information</h1></span>
+                </div>
+            </div>
+        </div>
+        <!-- body code goes here -->
+
+        <section id="order-info">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner m-auto">
+                    <div class="col-md-6 checkout-form">
+                        <!-- Form starts here -->
+                        <h3><span class="active">Customer </span>Information</h3>
+                        <form action="">
+                            <!-- Options to type or select start here -->
+                            <div class="input-holder">
+                               <label for="">E-mail</label>
+                               <div class="input-holder-input">
+                                    <input type="text"> 
+                               </div> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Payment Terms</label>
+                               <div class="input-holder-input">
+                                    <input type="text"> 
+                               </div>
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Customer Type</label>
+                               <div class="input-group input-group-2 mb-3">
+                                    <select class="custom-select custom-select-2" id="inputGroupSelect02">
+                                        <option selected>Select Status (Optional)</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-holder">
+                               <label for="">3rd Party Billing</label>
+                               <div class="input-group input-group-2 mb-3">
+                                    <select class="custom-select custom-select-2" id="inputGroupSelect03">
+                                        <option selected>Select Status (Optional)</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order-info" class="order-info-2">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner m-auto">
+                    <div class="col-md-6 checkout-form">
+                        <!-- Form starts here -->
+                        <h3><span class="active">Shipping </span>Information</h3>
+                        <form action="">
+                            <!-- Options to type or select start here -->
+                            <div class="input-holder">
+                               <label for="">Business Name</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Contact Name</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Address 1</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Address 2</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">City</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">State</label>
+                               <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect04">
+                                        <option selected>Select Status (Optional)</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Zip Code</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Country</label>
+                               <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect05">
+                                        <option selected>Select Status (Optional)</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Phone</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-under">
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <label>Residential Address</label>
+                                        <div class="special-check customer-special-check">
+                                            <input type="checkbox" id="checkboxInput9" class="none"/>
+                                            <label class="check" for="checkboxInput9"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Inputs under options end here -->
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                    <div class="col-md-6 checkout-form textarea-form customer-textarea-form">
+                        <!-- Form starts here -->
+                        <p>Shipping/Assembly Instructions (Optional)</p>
+                        <form action="">
+                            <!-- Text Area starts here-->
+                            <div class="input-holder">
+                                <textarea name="" id=""></textarea>
+                            </div>
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order-info" class="customer-billing-info">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner m-auto">
+                    <div class="col-md-6 checkout-form billing-info">
+                        <!-- Form starts here -->
+                        <h3><span class="active">Billing </span>Information</h3>
+                        <form action="">
+                            <!-- Options to type or select start here -->
+                            <div class="input-holder">
+                                <label class="email-label" for="">Email</label>
+                                <input type="text"> 
+                            </div>
+                            <div class="input-under">
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <div class="special-check">
+                                            <input type="checkbox" id="checkboxInput7" class="none"/>
+                                            <label class="check" for="checkboxInput7"></label>
+                                            <div class="billing-label">
+                                                <label for="checkboxInput7">Same As Shipping Address</label>
+                                            </div>
+                                        </div>
+                                        <div class="special-check">
+                                            <input type="checkbox" id="checkboxInput8" class="none" value="1" onchange="valueChanged()"/>
+                                            <label class="check" for="checkboxInput8"></label>
+                                            <div class="billing-label">
+                                                <label>Use A Different Billing Address</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Inputs under options end here -->
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Billing info when you click "use a different billing address" -->
+        <section id="order-info" class="order-info-2 billing-shipment">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner m-auto">
+                    <div class="col-md-6 checkout-form">
+                        <!-- Form starts here -->
+                        <h3><span class="active">Billing </span>Information</h3>
+                        <form action="">
+                            <!-- Options to type or select start here -->
+                            <div class="input-holder">
+                               <label for="">Business Name</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Contact Name</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Address 1</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Address 2</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">City</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">State</label>
+                               <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect04">
+                                        <option selected>Select Status (Optional)</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Zip Code</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Country</label>
+                               <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect05">
+                                        <option selected>Select Status (Optional)</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Phone</label>
+                               <input type="text"> 
+                            </div>
+                            <!-- Inputs under options end here -->
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Update Profile Button -->
+        <div class="container-fluid">
+            <div class="row row-container-inner">
+                <div class="next-button customer-next-button">
+                    <div class="orange-border">
+                        <a href="#">Update Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

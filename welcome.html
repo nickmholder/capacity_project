@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <h1 id="title" class="title"></h1>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <div class="container-fluid d-flex  ccc-options">
+            <div class="row row-container-inner">
+                <div class="col-md-12 no-padding">
+                    <h2 class="welcome">Welcome to the Capacity Client Center where you can:</h2>
+                </div>
+                <div class="col-md-4 no-padding-left options">
+                    <h2><a href="orders.html">Manage Orders</a></h2>
+                    <h2><a href="customers.html">Manage Customers</a></h2>
+                    <h2><a href="products.html">Search Products</a></h2>
+                    <h2><a href="receiving.html">Manage Receiving Orders</a></h2>
+                </div>
+                <div class="col-md-5 options">
+                    <h2><a href="reports.html">Retrieve Reports</a></h2>
+                    <h2><a href="products-view-cart.html">View Your Cart</a></h2>
+                    <h2><a href="customers-account-info.html">Update Your Account Information</a></h2>
+                </div>
+                <div class="col-md-3 ">
+                    <img src="images/box.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile code for ccc-options -->
+        <section class="mobile">
+            <div class="container-fluid ccc-options-mobile">
+                <div class="row row-container">
+                    <div class="ccc-paragraph-mobile">
+                        <p>Welcome to the Capacity Client Center. From here you can Manage Orders, Manage Customers, Search Products, Manage Receiving Orders, Retrieve Reports, View Your Cart, Update Your Account Information, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid ccc-options-mobile">
+                <div class="row row-container">
+                    <div class="ccc-buttons-mobile">
+                        <button class="orange-border ccc-button-mobile">
+                            <a href="products.html">Products</a>
+                        </button>
+                        <button class="orange-border ccc-button-mobile">
+                            <a href="orders.html">Orders</a>
+                        </button>
+                        <button class="orange-border ccc-button-mobile">
+                            <a href="customers.html">Customers</a>
+                        </button>
+                        <button class="orange-border ccc-button-mobile">
+                            <a href="receiving.html">Receiving</a>
+                        </button>
+                        <button class="orange-border ccc-button-mobile">
+                            <a href="reports.html">Reports</a>
+                        </button>
+                        <button class="orange-border ccc-button-mobile">
+                            <a href="index.html">Log Out</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Mobile Code -->
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-3.3.2.js"></script>
+
+        <!-- Script import for header -->
+        <script src="js/main.js"></script>
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

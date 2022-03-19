@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Receiving</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <h1 id="title" class="title"> </h1>
+            </div>
+        </div>
+        
+        <!-- body code goes here -->
+        <div class="container-fluid d-flex ccc-options">
+            <div class="row row-container-inner">
+                <div class="col-md-9 no-padding">
+                    <h2>Welcome to the receiving section of the Capacity Client Center where you can:</h2>
+                </div>
+                <div class="col-md-5 options no-padding-left">
+                    <h2>Place New Receiving Orders</h2>
+                    <h2>Download Receiving Order Template</h2>
+                    <h2>Check Receiving Order Status</h2>
+                </div>
+                <div class="col-md-4 options no-padding-right">
+                    <div class="place-new">
+                        <div class="orange-border">
+                            <a class="order-a" href="receiving-purchaseOrder.html">Place New Receiving Order</a>
+                        </div>
+                    </div>
+                    <div class="check-order">
+                        <div class="orange-border">
+                            <a class="order-a" href="checkStatus-results.html">Check Receiving Order Status</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/box.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile code for ccc-options -->
+        <section class="mobile">
+            <div class="container-fluid ccc-options-mobile">
+                <div class="row row-container">
+                    <div class="ccc-paragraph-mobile">
+                        <p>Welcome to the Capacity Client Center. From here you can Manage Orders, Manage Customers, Search Products, Manage Receiving Orders, Retrieve Reports, View Your Cart, Update Your Account Information, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid ccc-options-mobile">
+                <div class="row row-container">
+                    <div class="ccc-buttons-mobile">
+                        <button class="orange-border ccc-button-mobile-receiving">
+                            <a href="checkStatus-purchase.html">Place New Receiving Order</a>
+                        </button>
+                        <button class="orange-border ccc-button-mobile-receiving">
+                            <a href="checkStatus-results.html">Check Receiving Order Status</a>
+                        </button>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Mobile Code -->
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-3.3.2.js"></script>
+
+        <!-- Script import for header -->
+        <script src="js/main.js"></script>
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

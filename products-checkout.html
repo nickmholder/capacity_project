@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products -</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Checkout</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="trouble-orders">
+            <div class="container-fluid">
+                <div class="row row-container-inner screened-orange">
+                    <div class="col-md-12 mw-100">
+                        <div class="trouble-orders-problems">
+                            <h4 class="m-auto t-center">If you are an existing customer, please locate your record information by searching existing customers below. If you are a new customer please register below. Please try to locate a customer first <b>before</b> registering new customer.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container-fluid your-cart">
+                <div class="row row-container">
+                    <div class="col-md-12 no-padding-left">
+                        <div class="cart-number">
+                            <div class="col-md-9">
+                                <h3>Your Cart Number is 38846641</h3>
+                            </div>
+                            <div class="col-md-3 no-padding-left no-padding-right d-flex justify-content-end">
+                                <h4 class="arrow-down">Save Cart As List</h4>
+                                <h4>Empty Cart</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="customer-search">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner m-auto">
+                    <div class="col-md-6 checkout-form">
+                        <!-- Form starts here -->
+                        <h3><span class="active">Existing </span>Customers</h3>
+                        <p>Search for an existing customer record by using any of the fields below.</p>
+                        <form action="">
+                            <!-- Options to type or select start here -->
+                            <div class="input-holder">
+                               <label for="">Business Name</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Contact Name</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Zip Code</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Phone</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-holder">
+                               <label for="">Email</label>
+                               <input type="text"> 
+                            </div>
+                            <div class="input-under">
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <label>Search By</label>
+                                        <div class="shipping-check">
+                                            <input type="checkbox" id="checkboxInput1" class="none"/>
+                                            <label class="check" for="checkboxInput1"></label>
+                                            <label class="shipping-label" for="checkboxInput1">Shipping</label>
+                                        </div>
+                                        <div class="billing-check">
+                                            <input type="checkbox" id="checkboxInput2" class="none"/>
+                                            <label class="check" for="checkboxInput2"></label>
+                                            <label class="billing-label" for="checkboxInput2">Billing</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Inputs under options end here -->
+                        </form>
+                        <!-- Form ends here -->
+                        <div class="customer-search">
+                            <div class="customer-locate">
+                                <div class="customer-locate-top">
+                                    <div class="orange-border customer-button">
+                                        <a href="customers-search.html">Search For Customer</a>
+                                    </div>
+                                </div>
+                                <div class="customer-locate-bottom">
+                                    <h3>We're sorry, we were unable to locate any matching records. Please feel free to <span class="active">Add A New Customer</span>.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 new-customers">
+                        <div class="new-customers-top">
+                            <h3><span class="active">New </span>Customers</h3>
+                            <p><span class="active">IMPORTANT! </span>Please try searching Existing Customers first <b>before </b>entering a "New Customer".</p>
+                        </div>
+                        <div class="new-customers-bottom">
+                            <div class="orange-border customer-button-2">
+                                <a href="customers-account-info.html">Add A New Customer</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 results-search">
+                        <div class="search-results">
+                            <h3>Search Results</h3>
+                            <p>Your search returned the <b>2</b> matching records below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid no-padding-left no-padding-right">
+                <div class="overflow">
+                    <table class="table table-responsive-md order-table customer-table">
+                        <thead class="thead-color">
+                            <tr>
+                                <th class="no-border-3"></th>
+                                <th class="no-border-2 select-table" scope="col">Select</th>
+                                <th class="arrow-down no-border-2" scope="col">Business Name</th>
+                                <th class="no-border-2" scope="col">Contact Name</th>
+                                <th class="no-border-2" scope="col">Address</th>
+                                <th class="no-border-2" scope="col">Zip Code</th>
+                                <th class="no-border-2" scope="col">Email</th>
+                                <th class="no-border-2" scope="col">Last Order</th>
+                                <th class="no-border-2"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="input-under">
+                                        <div class="input-holder-under">
+                                            <div class="h3-under">
+                                                <div class="select-check">
+                                                    <input type="checkbox" id="checkboxInput4" class="none"/>
+                                                    <label class="check" for="checkboxInput4"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-left">Capacity Assembly Dept.</td>
+                                <td>Emily Siegert</td>
+                                <td>112 Corporate Road, North Brunswick, New Jersey</td>
+                                <td>08902</td>
+                                <td>N/A</td>
+                                <td>03/09/18</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="input-under">
+                                        <div class="input-holder-under">
+                                            <div class="h3-under">
+                                                <div class="select-check">
+                                                    <input type="checkbox" id="checkboxInput5" class="none"/>
+                                                    <label class="check" for="checkboxInput5"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-left">Tandum Corp</td>
+                                <td>Emily Nichols</td>
+                                <td>Hurst Walmart Supercenter #508,<br>1732 Precinct Line R Hurst, Texas</td>
+                                <td>76054</td>
+                                <td>esiegert@capacityllc.com</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row row-container-inner ship-to-selected">
+                    <div class="orange-border ship-selected-button">
+                        <a href="products-checkout2.html">Ship To Selected</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-3.3.2.js"></script>
+
+        <!-- Script import for header -->
+        <script src="js/main.js"></script>
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

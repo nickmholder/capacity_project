@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Receiving - </title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Purchase Order Report</h1></span>
+                </div>
+            </div>
+        </div>
+        <!-- body code goes here -->
+
+        <div class="overflow">
+            <table class="table table-bordered table-margin-bottom">
+                <thead class="thead-color">
+                    <tr>
+                        <th class="arrow-down" scope="col">PO #</th>
+                        <th scope="col">Capacity #</th>
+                        <th scope="col">Delivery Date</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">TO-030262</th>
+                        <td>1957216</td>
+                        <td>08-Mar-18</td>
+                        <td>Receiving/Received</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section id="show-all-detail-button">
+            <div class="container-fluid">
+                <div class="row row-container-inner">
+                    <div class="col-md-12">
+                        <div class="more-entries">
+                            <div class="more-entries-show">
+                                <a class="collapsed show-all-detail" data-toggle="collapse" href="#showDetail">+ Show all detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="overflow">
+            <table class="table table-bordered striped">
+                    <thead class="thead-color">
+                        <tr>
+                            <th class="arrow-down" scope="col">SKU</th>
+                            <th scope="col">ext sku</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Ordered</th>
+                            <th scope="col">Received</th>
+                            <th scope="col">Posted Time</th>
+                        </tr>
+                    </thead>
+                    <tbody class="even-striped">
+                        <tr>
+                            <th scope="row">846733007615</th>
+                            <td>FG01570-01</td>
+                            <td>Tartelette in bloom palette - tartelette II</td>
+                            <td>80</td>
+                            <td>80</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">846733007615</th>
+                            <td>FG01570-01</td>
+                            <td>Maracuja Concealer Medium</td>
+                            <td>80</td>
+                            <td>80</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">846733007615-UN</th>
+                            <td>846733004164</td>
+                            <td>Clay brow mousse - medium brown</td>
+                            <td>500</td>
+                            <td>500</td>
+                            <td></td>
+                        </tr>
+                        <tr class="av-dropdown">
+                            <td class="ohd-dropdown overflow">
+                                <div id="showDetail" class="collapse">
+                                    <table class="showDetail-table">
+                                        <tbody>
+                                            <tr>
+                                                <th class="w-66" scope="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="w-11">80</td>
+                                                <td>03/06/2018 13:22</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>120</td>
+                                                <td>03/10/2018 10:01</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>50</td>
+                                                <td>03/06/2018 08:33</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>25</td>
+                                                <td>03/06/2018 08:33</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>25</td>
+                                                <td>03/06/2018 08:33</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>25</td>
+                                                <td>03/06/2018 08:33</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container-fluid">
+                <div class="row row-container justify-content-end">
+                    <a class="active arrow-left" href="checkStatus-results.html">Back to results page</a>
+                </div>
+            </div>
+            <footer></footer>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-3.3.2.js"></script>
+
+        <!-- Script import for header -->
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

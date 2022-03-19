@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orders -</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid no-padding">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Manage Lists</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="edit-manage-order">
+            <div class="container-fluid ccc-options">
+                <div class="row row-container-inner">
+                    <div class="col-md-9">
+                        <div class="manage-form">
+                            <form action="">
+                                <div class="input-holder">
+                                    <div class="input-group mb-3">
+                                        <label for="">Select List To Edit</label>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Assembly SOP</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-holder input-holder-list-name">
+                                    <label>List Name</label><input type="text" required placeholder="Assembly SOP" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="orange-button">
+                            <div class="orange-border">
+                                <a href="#">Delete List</a>
+                            </div>
+                        </div>
+                        <div class="orange-button">
+                            <div class="orange-border">
+                                <a href="#">Merge</a>
+                            </div>
+                        </div>
+                        <div class="orange-button">
+                            <div class="orange-border">
+                                <a href="#">Copy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/gears.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Code starts here -->
+        <section id="edit-manage-order" class="edit-manage-orderLists-mobile m-auto">
+            <div class="container-fluid ccc-options">
+                <div class="row row-container-inner">
+                    <div class="col-md-12">
+                        <div class="manage-form">
+                            <form action="">
+                                <div class="input-holder">
+                                    <div class="input-group mb-3 align-items-center">
+                                        <label for="">Select List To Edit</label>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Assembly SOP</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trouble-orders" class="trouble-orders-mobile">
+            <div class="container-fluid mw-100">
+                <div class="row row-container-inner">
+                    <div class="col-md-12 mw-100">
+                        <div class="red-error-pending">
+                            <img src="images/red-error-small.png" alt="">
+                            <h4 class="m-auto">Indicates a possible short/overcommited product.</h4>
+                        </div>
+                        <div class="red-error-pending">
+                            <img src="images/stop-icon.png" alt="">
+                            <h4 class="m-auto">Indicates a discontinued product and will not be added to your cart.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edit-manage-order" class="edit-manage-orderLists-mobile">
+            <div class="container-fluid ccc-options bg-white">
+                <div class="row row-container-inner">
+                    <div class="col-md-12">
+                        <div class="manage-form">
+                            <form action="" class="list-name-mobile">
+                                <div class="input-holder input-holder-list-name align-items-center">
+                                    <label>List Name</label><input type="text" required placeholder="Assembly SOP" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="delete-merge-copy-mobile">
+                            <div class="orange-button">
+                                <div class="orange-border">
+                                    <a href="#">Delete List</a>
+                                </div>
+                            </div>
+                            <div class="orange-button">
+                                <div class="orange-border">
+                                    <a href="#">Merge</a>
+                                </div>
+                            </div>
+                            <div class="orange-button">
+                                <button class="orange-border">
+                                    <a href="#">Copy</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile Code ends here -->
+
+        <section id="manage-lists-table">
+            <div class="container-fluid no-padding-left no-padding-right">
+                <div class="order-trouble-table mobile-pending-orders">
+                    <h1><span class="active">Pending Orders</span> Results</h1>
+                </div>
+                <div class="overflow">
+                    <table class="table table-responsive-md order-table">
+                        <thead class="thead-color">
+                            <tr>
+                                <th class="no-border-3"></th>
+                                <th class="arrow-down no-border-2" scope="col">Brand</th>
+                                <th class="no-border-2" scope="col">SKU</th>
+                                <th class="no-border-2" scope="col">Description</th>
+                                <th class="no-border-2 order-table-text" scope="col">Price</th>
+                                <th class="no-border-2 order-table-text" scope="col">Order Qty</th>
+                                <th class="no-border-2 order-table-text" scope="col">Avail.</th>
+                                <th class="no-border-2 order-table-text" scope="col">Total</th>
+                                <th class="no-border-2 order-table-text">Delete</th>
+                                <th class="no-border-2"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td class="text-left">Your Brand Statuinery</td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box</td>
+                                <td>$15.00</td>
+                                <td class="order-qty"><input class="qty-input" type="text" name="" id="" placeholder="1"></td>
+                                <td>100</td>
+                                <td>$15.00</td>
+                                <td><a href="#"><img src="images/orange-trashcan.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td class="text-left">Your Brand Statuinery</td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box</td>
+                                <td>$3.00</td>
+                                <td class="order-qty"><input class="qty-input" type="text" name="" id="" placeholder="1"></td>
+                                <td>100</td>
+                                <td>$3.00</td>
+                                <td><a href="#"><img src="images/orange-trashcan.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New Row -->
+                            <tr class="line-through">
+                                <td></td>
+                                <td class="text-left stop-icon"><h4 class="stop-icon-before">Your Brand HBA</h4></td>
+                                <td>20283765</td>
+                                <td>Laneige Power Essential Skin Toner -<br>Normal/Dry Skin</td>
+                                <td>$3.00</td>
+                                <td class="order-qty"><input class="qty-input" type="text" name="" id="" placeholder="1"></td>
+                                <td>100</td>
+                                <td>$3.00</td>
+                                <td><a href="#"><img src="images/orange-trashcan.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr class="error-red">
+                                <td></td>
+                                <td class="text-left red-error"><h4 class="red-error-before">Laneige</h4></td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box</td>
+                                <td>$3.00</td>
+                                <td class="order-qty"><input class="qty-input" type="text" name="" id="" placeholder="1"></td>
+                                <td>100</td>
+                                <td>$3.00</td>
+                                <td><a href="#"><img src="images/orange-trashcan.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td class="text-left">Your Brand Statuinery</td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box</td>
+                                <td>$25.00</td>
+                                <td class="order-qty"><input class="qty-input" type="text" name="" id="" placeholder="1"></td>
+                                <td>100</td>
+                                <td>$25.00</td>
+                                <td><a href="#"><img src="images/orange-trashcan.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer id="cart" class="manage-lists-cart">
+            <div class="container-fluid">
+                <div class="row row-container">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <div class="cart">
+                            <h3>List Total $49.00</h3>
+                            <div class="cart-top-button">
+                                <div class="orange-border">
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="cart-bottom-button">
+                                <div class="orange-border">
+                                    <a href="#">Update List</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

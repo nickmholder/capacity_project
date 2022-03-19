@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Receiving - </title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"></h1><span><h1 class="active"> Place Order</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile code for under Receiving -->
+        <div class="container-fluid place-new-order-mobile">
+            <div class="row row-container-inner-h3">
+                <div class="col-md-12 no-padding-left download-button">
+                    <div class="orange-border new-button">
+                        <a href="#">Download the receiving order template</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End mobile code -->
+
+        <!-- body code goes here -->
+        <div class="container-fluid place-new-order">
+            <div class="row row-container-inner screened-orange">
+                <div class="col-md-12 no-padding-left">
+                    <h1 class="m-auto-top">Place New Receiving Orders</h1>
+                </div>
+                <div class="col-md-10 no-padding-left">
+                    <p>From here you can place orders for existing products, manage product information, and download the product template spreadsheet.</p>
+                </div>
+                <div class="col-md-12 no-padding-left download-button">
+                    <div class="orange-border new-button">
+                        <a href="#">Download the receiving order template</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid upload-options">
+            <div class="row row-container-inner-h3">
+                <div class="upload">
+                    <div class="col-md-7">
+                        <h1>Upload Your Receiving Purchase Order File</h1>
+                    </div>
+                    <div class="col-md-12 upload-button">
+                        <div class="orange-border new-button">
+                            <a href="" id="upload_link">Choose File</a>
+                        </div>
+                        <span class="upload"><input id="upload" type="file" /></span>
+                        <label class="upload-text" for="upload"><span>No File Chosen</span></label>
+                    </div>
+                    <div class="col-md-12 upload-button">
+                        <div class="orange-border upload-file new-button"><a href="#">Upload File</a></div>
+                    </div>
+                    <img class="upload-image" src="images/upload-image.png" alt="">
+                </div>
+            </div>
+        </div>     
+        <!-- body code ends here  -->
+        
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML()
+        </script>
+    </body>
+</html>

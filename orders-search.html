@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orders - </title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Search Orders</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section>
+            <div class="container-fluid check-status-h3">
+                <div class="row row-container-inner m-auto screened-orange">
+                    <div class="col-md-12 no-padding-left">
+                        <h3 class="t-center m-auto">Enter your purchase order (P.O.), SKU and/or date range below to search for orders:</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile code for check status h3 -->
+        <div class="container-fluid check-status-h3-mobile">
+            <div class="row row-container-inner m-auto">
+                <div class="col-md-12 no-padding">
+                    <p>Enter your purchase order (P.O.), SKU and/or date range below to search for orders:<p>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile code for check status h3 ends here -->
+
+        <!-- Inner page starts here -->
+        <section id="search-orders">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner row-padding-form m-auto">
+                    <div class="col-md-7 form form-receiving flex">
+                        <!-- Form starts here -->
+                        <form action="">
+                            <h1 class="search-by t-transform_capital">Search By</h1>
+                            <!-- Options to type or select start here -->
+                            <div class="input-holder po-input-holder">
+                                <label>PO #</label><input type="text" required />
+                            </div>
+                            <div class="input-holder capacity-input-holder">
+                                <label>Capacity #</label><input type="text" required />
+                            </div>
+                            <div class="input-holder sku-input-holder">
+                                <label>External ID</label><input type="text" required />
+                            </div>
+                            <div class="input-holder">
+                                <div class="orange-border submit-orders">
+                                    <a class="button-a" href="#">Submit</a>
+                                </div>
+                            </div>
+                            <!-- Options to type or select end here -->
+                            <!-- Inputs under the options start here -->
+                            <div class="input-under">
+                                <div class="input-holder-under">
+                                    <h1 class="search-by t-transform_capital"><span class="active">Or </span>Search By</h1>
+                                </div>
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <div class="info info2">
+                                            <!-- Button data ends here -->
+                                            <h3>Approximate Receipt Date Range</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <div class="info">
+                                            <!-- Button data starts here for info icon -->
+                                                <button type="button" data-html="true" class="btn btn-secondary tooltip-info-2" data-toggle="tooltip" data-placement="top" 
+                                                title=
+                                                "
+                                                <p>Please enter the approximate date range your shipment arrived or is expected to arrive</p>
+                                                "
+                                                >
+                                                <img src="images/info-icons.png">
+                                            </button>
+                                            <!-- Button data ends here -->
+                                            <div class="create-date">
+                                                <h3>Create Date</h3>
+                                                <input type="checkbox" id="checkboxInput" class="none"/>
+                                                <label class="check" for="checkboxInput"></label>
+                                            </div>
+                                            <div class="ship-date">
+                                                <h3>Ship Date</h3>
+                                                <input type="checkbox" id="checkboxInput1" class="none"/>
+                                                <label class="check" for="checkboxInput1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-holder-under">
+                                    <div class="h3-under d-flex flex-wrap">
+                                        <div class="input-holder from-input-holder justify-content-start">
+                                            <div class="d-flex col-md-12 no-padding-left date-mobile">
+                                                <div class="input-group date align-items-center" id="datetimepicker1">
+                                                    <p>From</p><input type='text' class="form-control date-input" placeholder="05/31/18"/>
+                                                    <span class="input-group-addon">
+                                                        <img class="date-input-img" src="images/calender-icon.png" alt="">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-holder to-input-holder justify-content-start">
+                                            <div class="d-flex col-md-12 no-padding-left date-mobile">
+                                                <div class="input-group date align-items-center" id="datetimepicker2">
+                                                    <p>To</p><input type='text' class="form-control date-input" placeholder="06/31/18" />
+                                                    <span class="input-group-addon">
+                                                        <img class="date-input-img" src="images/calender-icon.png" alt="">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-by-bottom w-100">
+                                            <div class="input-holder">
+                                                <label>Name</label><input type="text" required />
+                                            </div>
+                                            <div class="input-holder">
+                                                <label>Zip</label><input type="text" required />
+                                            </div>
+                                            <div class="input-holder">
+                                                <label>Phone</label><input type="text" required />
+                                            </div>
+                                            <div class="input-holder">
+                                                <label>Invoice #</label><input type="text" required />
+                                            </div>
+                                            <div class="input-holder">
+                                                <label>SKU</label><input type="text" required />
+                                            </div>
+                                            <div class="input-holder">
+                                                <div class="input-group show-search mb-3">
+                                                    <label for="">Show</label>
+                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                        <option selected>Select Status (Optional)</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-holder">
+                                                <div class="orange-border submit-orders">
+                                                    <a class="button-a" href="#">Submit</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Inputs under options end here -->
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                    <!-- Search Icon Image to the right -->
+                    <div class="col-md-5 calender-image search-orders-images">
+                        <div class="orders-top-image">
+                            <img src="images/search-icon-small.png" alt="">
+                        </div>
+                        <div class="orders-bottom-image">
+                            <img src="images/calender.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section id="review-order-table" class="customer-history-table">
+            <div class="container-fluid no-padding-left no-padding-right">
+                <div class="overflow">
+                    <div class="order-history-table">
+                        <div class="order-history-table-heading">
+                            <a href="#">Assigned To Distro (4)</a>
+                            <a href="#">Picked (7)</a>
+                            <a href="#">Settled (3)</a>
+                            <a href="#">Voided (4)</a>
+                            <a href="#">Backorders (98)</a>
+                            <a href="#">Pending (1,024)</a>
+                            <a href="#">Trouble (0)</a>
+                        </div>
+                    </div>
+                    <table class="table table-responsive-md order-table">
+                        <thead class="thead-color">
+                            <tr>
+                                <th class="no-border-3"></th>
+                                <th class="arrow-down no-border-2" scope="col">Order #</th>
+                                <th class="no-border-2" scope="col">External Id</th>
+                                <th class="no-border-2" scope="col">PO #</th>
+                                <th class="no-border-2 order-table-text" scope="col">Order Source</th>
+                                <th class="w-20 no-border-2 order-table-text" scope="col">Business or Contact Name</th>
+                                <th class="no-border-2 order-table-text" scope="col">Rec'd Date</th>
+                                <th class="no-border-2 order-table-text w-5" scope="col">Rq Ship Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Ship Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Cancel Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Total $</th>
+                                <th class="no-border-2 order-table-text" scope="col">Inv #</th>
+                                <th class="no-border-3"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917157</td>
+                                <td>220171031141917157</td>
+                                <td>Imported</td>
+                                <td>Emily Nicholas</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>2220171031141917158</td>
+                                <td>220171031141917157</td>
+                                <td>Client Center</td>
+                                <td>Hassan Khan</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917159</td>
+                                <td>220171031141917157</td>
+                                <td>Client Center</td>
+                                <td>Emily Nichols</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917154</td>
+                                <td>220171031141917157</td>
+                                <td>Imported</td>
+                                <td>Hassan Khan</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer id="history-pages">
+            <div class="container-fluid">
+                <div class="row row-container flex-wrap">
+                    <div class="col-md-12 d-flex mw-100 which-history-page">
+                        <div class="history-pages">
+                            <div class="left-history-pages">
+                                <a class="first-page" href="#"></a>
+                                <a class="prev-page" href="#"></a>
+                                <a class="active-page" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a class="bigger-b-radius" href="#">10</a>
+                                <a class="next-page" href="#"></a>
+                                <a class="last-page" href="#"></a>
+                            </div>
+                            <div class="right-history-pages">
+                                <h4>1 - 4 of 4 items</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- body code ends here -->
+        
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reports - </title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Shipped Orders</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="download-invoices" class="report-shipped-orders">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner row-padding-form m-auto">
+                    <div class="col-md-12 form form-receiving flex">
+                        <!-- Form starts here -->
+                        <form action="" class="download-invoices-form">
+                            <div class="form-header">
+                                <h3 class="date-range m-auto">Enter Date Range</h3>
+                                <h4>All orders within this range will be displayed.</h4>
+                            </div>
+                            <div class="input-holder-under">
+                                <div class="h3-under d-flex flex-wrap">
+                                    <div class="input-holder from-input-holder justify-content-start">
+                                        <div class="d-flex col-md-12 no-padding-left date-mobile">
+                                            <div class="input-group date align-items-center" id="datetimepicker1">
+                                                <p>From</p><input type='text' class="form-control date-input" placeholder="05/31/18"/>
+                                                <span class="input-group-addon">
+                                                    <img class="date-input-img" src="images/calender-icon.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-holder to-input-holder justify-content-start">
+                                        <div class="d-flex col-md-12 no-padding-left date-mobile">
+                                            <div class="input-group date align-items-center" id="datetimepicker2">
+                                                <p>To</p><input type='text' class="form-control date-input" placeholder="06/31/18" />
+                                                <span class="input-group-addon">
+                                                    <img class="date-input-img" src="images/calender-icon.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-holder report-shipped-orders-submit">
+                                <div class="orange-border submit-orders new-button">
+                                    <a href="#">Submit</a>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                    <!-- Zoom Zoom Truck Image to the right -->
+                    <div class="col-md-5 calender-image search-orders-images">
+                        <div class="orders-top-image">
+                            <img src="images/shipped-orders-truck.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review-order-table" class="customer-history-table">
+            <div class="container-fluid no-padding-left no-padding-right">
+                <div class="order-trouble-table">
+                    <h1 class="t-transform_capital"><span class="active">Order</span> History</h1>
+                </div>
+                <div class="overflow">
+                    <table class="table table-responsive-md order-table">
+                        <thead class="thead-color">
+                            <tr>
+                                <th class="no-border-3"></th>
+                                <th class="no-border-2" scope="col">Capacity #</th>
+                                <th class="no-border-2" scope="col">External Id</th>
+                                <th class="no-border-2" scope="col">PO #</th>
+                                <th class="no-border-2 order-table-text" scope="col">Order Source</th>
+                                <th class="w-20 no-border-2 order-table-text" scope="col">Retailer</th>
+                                <th class="no-border-2 order-table-text" scope="col">Store Mumber</th>
+                                <th class="no-border-2 order-table-text w-5" scope="col">Ship To</th>
+                                <th class="no-border-2 order-table-text" scope="col">Ship To Zip</th>
+                                <th class="no-border-2 order-table-text" scope="col">Ship Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Rec'd Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Item Line #</th>
+                                <th class="no-border-2 order-table-text" scope="col">Capacity SKU</th>
+                                <th class="no-border-3"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917157</td>
+                                <td>22017</td>
+                                <td>Imported</td>
+                                <td>AAFESs</td>
+                                <td>24</td>
+                                <td>Yokota Main</td>
+                                <td>33527</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+
+                            
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917157</td>
+                                <td>22017</td>
+                                <td>Client Center</td>
+                                <td>AAFESs</td>
+                                <td>45</td>
+                                <td>Yokota Main</td>
+                                <td>33527</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+
+                            
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917157</td>
+                                <td>22017</td>
+                                <td>Client Center</td>
+                                <td>AAFESs</td>
+                                <td>64</td>
+                                <td>Yokota Main</td>
+                                <td>33527</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+
+                            
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917157</td>
+                                <td>22017</td>
+                                <td>Imported</td>
+                                <td>AAFESs</td>
+                                <td>77</td>
+                                <td>Yokota Main</td>
+                                <td>33527</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer id="history-pages" class="reports-shipped-footer">
+            <div class="container-fluid">
+                <div class="row row-container flex-wrap">
+                    <div class="col-md-12 d-flex mw-100 which-history-page">
+                        <div class="history-pages">
+                            <div class="left-history-pages">
+                                <a class="first-page" href="#"></a>
+                                <a class="prev-page" href="#"></a>
+                                <a class="active-page" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a class="bigger-b-radius" href="#">10</a>
+                                <a class="next-page" href="#"></a>
+                                <a class="last-page" href="#"></a>
+                            </div>
+                            <div class="right-history-pages">
+                                <h4>1 - 4 of 4 items</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 report-shipped-form">
+                        <form action="">
+                            <div class="input-holder">
+                                <div class="input-group show-search mb-3">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Select Format</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="orange-button d-flex justify-content-end">
+                                <div class="orange-border download new-button">
+                                    <a href="#">Export To File</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
+
+        
+        <!-- body code ends here -->
+        
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

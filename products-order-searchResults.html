@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products -</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Order Products</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="order-products">
+            <div class="container-fluid place-new-order-2">
+                <div class="row row-container">
+                    <div class="col-md-6 no-padding-left">
+                        <div class="find-products">
+                            <h2>Find Product</h2>
+                            <input type="text" />
+                            <a href="products-order-searchResults.html"><img src="images/search-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order-products-table">
+            <div class="container-fluid no-padding-left no-padding-right">
+                <div class="category-table-heading">
+                    <a class="grey-arrow-down">Narrow by Category</a>
+                </div>
+                <div class="overflow">
+                    <table class="table table-responsive-md order-table">
+                        <thead class="thead-color">
+                            <tr>
+                                <th class="no-border" scope="col"></th>
+                                <th class="arrow-down text-left" scope="col">Brand</th>
+                                <th scope="col">SKU</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Availability</th>
+                                <th class="order-table-text" scope="col">Order Qty</th>
+                                <th class="no-border order-table-text" scope="col">Place Order</th>
+                                <th class="no-border"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-left product-category" scope="row"></th>
+                                <th class="table-cell-holder"></th>
+                                <td class="text-left">Your Brand Statuinery</td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box <br> Price <span class="active">$15.00</span> per EACH</td>
+                                <td> <span class="active"><a class="collapsed" data-toggle="collapse" href="#onHand">On Hand ........100</a></span><br> Committed .......0  <br><a class="collapsed" data-toggle="collapse" href="#av">Available .......100</a></td>
+                                <td class="order-qty"><input type="text" name="" id=""></td>
+                                <td><a href="#"><img src="images/orange-shopping-cart.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- Dropdown for "On Hand" starts here -->
+                            <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="onHand" class="collapse onhand">
+                                        <h3>On Hand Details: Transactions</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#onHand" aria-expanded="false">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "On Hand" dropdown ends here -->
+
+                            <!-- Dropdown for "Available" starts here -->
+                            <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="av" class="collapse onhand">
+                                        <h3>Available</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#av" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "Available" dropdown ends here -->
+
+                            <!-- New Row -->
+                            <tr>
+                                <th scope="row"></th>
+                                <td class="text-left">Your Brand Statuinery</td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box <br> Price <span class="active">$15.00</span> per EACH</td>
+                                <td> <span class="active"><a class="collapsed" data-toggle="collapse" href="#onHand2">On Hand ........100</a></span><br> Committed .......0  <br><a class="collapsed" data-toggle="collapse" href="#av2">Available .......100</a></td>
+                                <td class="order-qty"><input type="text" name="" id=""></td>
+                                <td><a href="#"><img src="images/orange-shopping-cart.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+
+                            <!-- Dropdown for "On Hand" starts here -->
+                            <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="onHand2" class="collapse onhand">
+                                        <h3>On Hand Details: Transactions</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#onHand2" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "On Hand" dropdown ends here -->
+
+                             <!-- Dropdown for "Available" starts here -->
+                             <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="av2" class="collapse onhand">
+                                        <h3>Available</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#av2" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "Available" dropdown ends here -->
+
+                            <!-- New Row -->
+                            <tr>
+                                <th scope="row"></th>
+                                <td class="text-left">Laneige</td>
+                                <td>20283765</td>
+                                <td>Laneige Power Essential Skin<br>Toner - Normal/Dry Skin<br>Price<span class="active"> $25.00 </span>per EACH</td>
+                                <td> <span class="active"><a class="collapsed" data-toggle="collapse" href="#onHand3">On Hand ........100</a></span><br> Committed .......0  <br><a class="collapsed" data-toggle="collapse" href="#av3">Available .......100</a></td>
+                                <td class="order-qty"><input type="text" name="" id=""></td>
+                                <td><a href="#"><img src="images/orange-shopping-cart.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+
+                            <!-- Dropdown for "On Hand" starts here -->
+                            <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="onHand3" class="collapse onhand">
+                                        <h3>On Hand Details: Transactions</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#onHand3" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "On Hand" dropdown ends here -->
+
+                             <!-- Dropdown for "Available" starts here -->
+                             <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="av3" class="collapse onhand">
+                                        <h3>Available</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#av3" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "Available" dropdown ends here -->
+
+                            <!-- New row -->
+                            <tr>
+                                <th scope="row"></th>
+                                <td class="text-left">Your Brand Statuinery</td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box <br> Price <span class="active">$15.00</span> per Each</td>
+                                <td> <span class="active"><a class="collapsed" data-toggle="collapse" href="#onHand4">On Hand ........100</a></span><br> Committed .......0  <br><a class="collapsed" data-toggle="collapse" href="#av4">Available .......100</a></td>
+                                <td class="order-qty"><input type="text" name="" id=""></td>
+                                <td><a href="#"><img src="images/orange-shopping-cart.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+
+                            <!-- Dropdown for "On Hand" starts here -->
+                            <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="onHand4" class="collapse onhand">
+                                        <h3>On Hand Details: Transactions</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#onHand4" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "On Hand" dropdown ends here -->
+
+                             <!-- Dropdown for "Available" starts here -->
+                             <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="av4" class="collapse onhand">
+                                        <h3>Available</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#av4" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "Available" dropdown ends here -->
+
+                            <!-- New row -->
+                            <tr>
+                                <th scope="row"></th>
+                                <td class="text-left">Your Brand Statuinery</td>
+                                <td>112109ZZ</td>
+                                <td>Torah Crown 10 / 10 Box <br> Price <span class="active">$15.00</span> per Each</td>
+                                <td> <span class="active"><a class="collapsed" data-toggle="collapse" href="#onHand5">On Hand ........100</a></span><br> Committed .......0  <br><a class="collapsed" data-toggle="collapse" href="#av5">Available .......100</a></td>
+                                <td class="order-qty"><input type="text" name="" id=""></td>
+                                <td><a href="#"><img src="images/orange-shopping-cart.png" alt=""></a></td>
+                                <td></td>
+                            </tr>
+                            <!-- End new row -->
+
+                            <!-- Dropdown for "On Hand" starts here -->
+                            <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="onHand5" class="collapse onhand">
+                                        <h3>On Hand Details: Transactions</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#onHand5" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "On Hand" dropdown ends here -->
+
+                             <!-- Dropdown for "Available" starts here -->
+                             <tr class="av-dropdown">
+                                <td class="ohd-dropdown overflow">
+                                    <div id="av5" class="collapse onhand">
+                                        <h3>Available</h3>
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#av5" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                        <table class="onHand-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Reference #</th>
+                                                    <th>Description</th>
+                                                    <th>External Order ID</th>
+                                                    <th>QTY</th>
+                                                    <th>On Hand</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>01/25/18 14:14</th>
+                                                    <td class="active">12080905</td>
+                                                    <td>Updated Order 12080905 (Manual)</td>
+                                                    <td>220171031141917158</td>
+                                                    <td>-4</td>
+                                                    <td>992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/24/17 12:27</th>
+                                                    <td>12080794</td>
+                                                    <td>Updated Order 12080794 (Manual)</td>
+                                                    <td>201710276433544</td>
+                                                    <td>-1</td>
+                                                    <td>996</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/11/17 10:58</th>
+                                                    <td>12080759</td>
+                                                    <td>Updated Order 12080759 (Manual)</td>
+                                                    <td>201710276433512</td>
+                                                    <td>-1</td>
+                                                    <td>997</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:53</th>
+                                                    <td>12080758</td>
+                                                    <td>Updated Order 12080758 (Manual)</td>
+                                                    <td>201710276433511</td>
+                                                    <td>-1</td>
+                                                    <td>998</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10/10/17 16:06</th>
+                                                    <td>12080757</td>
+                                                    <td>Updated Order 12080757 (Manual)</td>
+                                                    <td>201710276433510</td>
+                                                    <td>-1</td>
+                                                    <td>999</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- "Available" dropdown ends here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid next-page-bar">
+                <div class="row row-container-inner">
+                    <div class="bar-left">
+                        <div class="which-page">
+                            <a class="first-page" href="#"></a><a class="prev-page" href="#">1</a>
+                            <a class="next-page" href="#">2</a><a class="last-page" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="bar-right">
+                        <div class="num-items">
+                            <p>1-5 of 9 items</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-3.3.2.js"></script>
+
+        <!-- Script import for header -->
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

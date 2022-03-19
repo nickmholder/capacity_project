@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orders -</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid no-padding">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">3rd Party Billing</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="order-party-billing">
+            <div class="container-fluid">
+                <div class="row row-container-inner screened-orange">
+                    <div class="col-md-12 mw-100">
+                        <div class="t-center edit-order-billing">
+                            <h3 class="m-auto">Edit Third Party Billing Account</h3>
+                            <p><span class="active">IMPORTANT! </span>Only U.S. accounts are supported</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order-party-form">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner row-padding-form m-auto">
+                    <div class="col-md-7 form form-receiving flex">
+                        <!-- Form starts here -->
+                        <form action="">
+                            <!-- Options to type or select start here -->
+                            <div class="input-holder-under">
+                                <div class="h3-under d-flex flex-wrap">
+                                    <div class="search-by-bottom w-100">
+                                        <div class="input-holder">
+                                            <label>Account</label><input type="text" />
+                                        </div>
+                                        <div class="input-holder">
+                                            <div class="input-group show-search mb-3">
+                                                <label for="">Carrier</label>
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected>UPS</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="input-holder">
+                                            <label>Business Name <span class="active">*</span></label><input type="text" required />
+                                        </div>
+                                        <div class="input-holder">
+                                            <label>Address 1</label><input type="text" required />
+                                        </div>
+                                        <div class="input-holder">
+                                            <label>Address 2 <span class="active">*</span></label><input type="text" />
+                                        </div>
+                                        <div class="input-holder">
+                                            <label>City <span class="active">*</span></label><input type="text" required />
+                                        </div>
+                                        <div class="input-holder">
+                                            <div class="input-group show-search mb-3">
+                                                <label for="">State <span class="active">*</span></label>
+                                                <select class="custom-select" id="inputGroupSelect02">
+                                                    <option selected>Select Status (Optional)</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="input-holder">
+                                            <label>Zip <span class="active">*</span></label><input type="text" required />
+                                        </div>
+                                        <div class="input-holder">
+                                            <label>Phone <span class="active">*</span></label><input type="text" required />
+                                        </div>
+                                        <div class="input-holder input-holder-country">
+                                            <label>Country USA</label><p>United States of America</p>
+                                        </div>
+                                        <div class="input-holder order-save-button">
+                                            <div class="orange-border order-button">
+                                                <a href="#">Save</a>
+                                            </div>
+                                        </div>
+                                        <div class="input-holder">
+                                            <p><span class="active">* </span>Required for UPS 3rd Party Shipping</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- Options to type or select end here -->
+                        </form>
+                        <!-- Form ends here -->
+
+                        <!-- Form image to the right -->
+                        <div class="col-md-5 calender-image search-orders-images">
+                            <div class="orders-top-image">
+                                <img src="images/3rd-party-billing.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

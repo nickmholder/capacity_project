@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reports - </title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Nightly Reports</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="download-invoices-banner">
+            <div class="container-fluid check-status-h3">
+                <div class="row row-container-inner m-auto screened-orange">
+                    <div class="col-md-12 no-padding-left">
+                        <h4 class="t-center m-auto">Search the report archive below to retrieve a nightly report for a specific date.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile code for check status h3 -->
+        <div class="container-fluid check-status-h3-mobile">
+            <div class="row row-container-inner-h3 m-auto">
+                <div class="col-md-12 no-padding">
+                    <p>Search the report archive below to retrieve a nightly report for a specific date.<p>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile code for check status h3 ends here -->
+
+        <!-- Inner page starts here -->
+        <section id="download-invoices" class="nightly-reports">
+            <div class="container-fluid no-padding">
+                <div class="row row-container-inner row-padding-form m-auto">
+                    <div class="col-md-12 form form-receiving flex">
+                        <!-- Form starts here -->
+                        <form action="" class="download-invoices-form checkout3-form">
+                            <div class="form-header">
+                                <h3 class="date-range m-auto">Enter Date</h3>
+                            </div>
+                            <div class="input-holder-under">
+                                <div class="h3-under d-flex flex-wrap">
+                                    <div class="input-holder from-input-holder justify-content-start">
+                                        <div class="d-flex col-md-12 no-padding-left date-mobile">
+                                            <div class="input-group date align-items-center" id="datetimepicker1">
+                                                <input type='text' class="form-control date-input" placeholder="05/31/18"/>
+                                                <span class="input-group-addon">
+                                                    <img class="date-input-img" src="images/calender-icon.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-holder retrieve-report-button">
+                                <div class="orange-border submit-orders new-button">
+                                    <a href="#">Retrieve Report</a>
+                                </div>
+                            </div>
+                            <div class="input-under found-reports">
+                                <div class="input-holder-under">
+                                    <h3 class="active">The following Reports were found:</h3>
+                                    <div class="h3-under">
+                                        <div class="special-check">
+                                            <input type="checkbox" id="checkboxInputn1" class="none"/>
+                                            <label class="check" for="checkboxInputn1"></label>
+                                        </div>
+                                        <label>Daily Inventory EC 05302018.xls</label>
+                                    </div>
+                                </div>
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <div class="special-check">
+                                            <input type="checkbox" id="checkboxInputn2" class="none"/>
+                                            <label class="check" for="checkboxInputn2"></label>
+                                        </div>
+                                        <label>Daily Shipped Header EC 05302018.xls</label>
+                                    </div>
+                                </div>
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <div class="special-check">
+                                            <input type="checkbox" id="checkboxInputn3" class="none"/>
+                                            <label class="check" for="checkboxInputn3"></label>
+                                        </div>
+                                        <label>Daily Shipped Line EC 05302018.xls</label>
+                                    </div>
+                                </div>
+                                <div class="input-holder-under">
+                                    <div class="h3-under">
+                                        <div class="special-check">
+                                            <input type="checkbox" id="checkboxInputn4" class="none"/>
+                                            <label class="check" for="checkboxInputn4"></label>
+                                        </div>
+                                        <label>Daily UnShipped Line EC 05302018.xls</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Form ends here -->
+                    </div>
+                    <!-- Search Icon Image to the right -->
+                    <div class="col-md-5 calender-image search-orders-images">
+                        <div class="orders-top-image">
+                            <img src="images/nightly-report.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="file-created">
+                            <div class="orange-button">
+                                <div class="orange-border download new-button">
+                                    <a href="#">Download Selected</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+
+        
+        <!-- body code ends here -->
+        
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

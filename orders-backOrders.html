@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orders -</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid no-padding">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Release Backorders</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="order-back-order">
+            <div class="container-fluid">
+                <div class="row row-container-inner screened-orange">
+                    <div class="col-md-12 mw-100">
+                        <div class="t-center edit-order-billing">
+                            <h3 class="m-auto">Release an entire purchase order (multiple stores) from backorder status.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review-order-table" class="customer-history-table">
+            <div class="container-fluid no-padding-left no-padding-right">
+                <div class="order-trouble-table">
+                    <h1><span class="active">Backorders</span> Results</h1>
+                </div>
+                <div class="overflow">
+                    <table class="table table-responsive-md order-table">
+                        <thead class="thead-color">
+                            <tr>
+                                <th class="no-border-3"></th>
+                                <th class="no-border-2 order-trouble-checks" scope="col">
+                                    <div class="order-trouble-check arrow-down">
+                                        <div class="input-under">
+                                            <div class="input-holder-under">
+                                                <div class="h3-under">
+                                                    <div class="special-check">
+                                                        <input type="checkbox" id="checkboxInput01" class="none"/>
+                                                        <label class="check" for="checkboxInput01"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Order #
+                                    </div>
+                                    
+                                </th>
+                                <th class="no-border-2" scope="col">External Id</th>
+                                <th class="no-border-2" scope="col">PO #</th>
+                                <th class="no-border-2 order-table-text" scope="col">Order Source</th>
+                                <th class="w-20 no-border-2 order-table-text" scope="col">Business or Contact Name</th>
+                                <th class="no-border-2 order-table-text" scope="col">Rec'd Date</th>
+                                <th class="no-border-2 order-table-text w-5" scope="col">Rq Ship Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Ship Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Cancel Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Total $</th>
+                                <th class="no-border-2 order-table-text" scope="col">Inv #</th>
+                                <th class="no-border-3"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td class="order-trouble-checks">
+                                    <div class="order-trouble-check">
+                                        <div class="input-under">
+                                            <div class="input-holder-under">
+                                                <div class="h3-under">
+                                                    <div class="special-check">
+                                                        <input type="checkbox" id="checkboxInput02" class="none"/>
+                                                        <label class="check" for="checkboxInput02"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#">CD1208094</a>
+                                    </div>
+                                </td>
+                                <td>220171031141917157</td>
+                                <td>220171031141917157</td>
+                                <td>Imported</td>
+                                <td>Emily Nicholas</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td class="order-trouble-checks">
+                                    <div class="order-trouble-check">
+                                        <div class="input-under">
+                                            <div class="input-holder-under">
+                                                <div class="h3-under">
+                                                    <div class="special-check">
+                                                        <input type="checkbox" id="checkboxInput03" class="none"/>
+                                                        <label class="check" for="checkboxInput03"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="" href="#">CD1208094</a>
+                                    </div>
+                                </td>
+                                <td>2220171031141917158</td>
+                                <td>220171031141917157</td>
+                                <td>Client Center</td>
+                                <td>Hassan Khan</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td class="order-trouble-checks">
+                                    <div class="order-trouble-check">
+                                        <div class="input-under">
+                                            <div class="input-holder-under">
+                                                <div class="h3-under">
+                                                    <div class="special-check">
+                                                        <input type="checkbox" id="checkboxInput04" class="none"/>
+                                                        <label class="check" for="checkboxInput04"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#">CD1208094</a>
+                                    </div>
+                                </td>
+                                <td>220171031141917159</td>
+                                <td>220171031141917157</td>
+                                <td>Client Center</td>
+                                <td>Emily Nichols</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td class="order-trouble-checks">
+                                    <div class="order-trouble-check">
+                                        <div class="input-under">
+                                            <div class="input-holder-under">
+                                                <div class="h3-under">
+                                                    <div class="special-check">
+                                                        <input type="checkbox" id="checkboxInput05" class="none"/>
+                                                        <label class="check" for="checkboxInput05"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#">CD1208094</a>
+                                    </div>
+                                </td>
+                                <td>220171031141917154</td>
+                                <td>220171031141917157</td>
+                                <td>Imported</td>
+                                <td>Hassan Khan</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer id="cart">
+            <div class="container-fluid">
+                <div class="row row-container">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <div class="cart">
+                            <div class="cart-bottom-button">
+                                <div class="orange-border">
+                                    <a href="#">Release Selected</a>
+                                </div>
+                            </div>
+                            <a class="active arrow-left" href="orders-search.html">Back To Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

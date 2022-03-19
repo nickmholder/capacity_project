@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Receiving - </title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"></h1><span><h1 class="active">Purchase Order Report</h1></span>
+                </div>
+            </div>
+        </div> 
+
+        <section id="trouble-orders">
+            <div class="container-fluid">
+                <div class="row row-container-inner screened-orange">
+                    <div class="col-md-12 mw-100">
+                        <div class="trouble-orders-problems">
+                            <h4 class="m-auto t-center">By default, all Purchase Order reports show a summary report. To view a detailed report, simply select "Show All Detail."</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="show-all-detail-button">
+            <div class="container-fluid">
+                <div class="row row-container-inner">
+                    <div class="col-md-12">
+                        <div class="more-entries">
+                            <div class="more-entries-show">
+                                <a class="collapsed show-all-detail" data-toggle="collapse" href="#showDetail">+ Show all detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid results-content-mobile-export">
+            <div class="row row-container d-flex justify-content-center results">
+                <div class="col-md-6 d-flex align-items-center results-content-export results-content">
+                    <button class="excel-button orange-border">
+                        <a href="#">Export Table to Excel</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Received Table starts here -->
+        <div class="overflow">
+            <table class="table table-bordered striped table-responsive-md">
+                <thead class="thead-color">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Ext #</th>
+                        <th scope="col">Capacity #</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Qty Received</th>
+                        <th scope="col">No. Expected</th>
+                        <th scope="col">No. Received</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">14-Sep-17</th>
+                        <td>8/3/17</td>
+                        <td>1957216</td>
+                        <td>Open</td>
+                        <td>28LB0X11.5-9.5-6.5</td>
+                        <td>1500</td>
+                        <td>1500</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14-Sep-17</th>
+                        <td>8/3/17</td>
+                        <td>1957216</td>
+                        <td>Closed</td>
+                        <td>S-4381</td>
+                        <td>3660</td>
+                        <td>3660</td>
+                        <td>3660</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14-Sep-17</th>
+                        <td>ELLEN_METAL 10/04/17</td>
+                        <td>1957216</td>
+                        <td>Closed</td>
+                        <td>S-4381</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14-Sep-17</th>
+                        <td>8/3/17</td>
+                        <td>1957216</td>
+                        <td>Closed</td>
+                        <td>S-4381</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="av-dropdown">
+                        <td class="ohd-dropdown overflow">
+                            <div id="showDetail" class="collapse">
+                                <table class="showDetail-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="w-66" scope="row"></th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="w-11">80</td>
+                                            <td>03/06/2018 13:22</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>120</td>
+                                            <td>03/10/2018 10:01</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>50</td>
+                                            <td>03/06/2018 08:33</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>25</td>
+                                            <td>03/06/2018 08:33</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>25</td>
+                                            <td>03/06/2018 08:33</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>25</td>
+                                            <td>03/06/2018 08:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Received Table ends here -->
+        <section>
+            <div class="container-fluid">
+                <div class="row row-container justify-content-end">
+                    <a class="active arrow-left" href="checkStatus-results.html">Back to results page</a>
+                </div>
+            </div>
+        </section>
+        <!-- body code ends here -->
+        
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

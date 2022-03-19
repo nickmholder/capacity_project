@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid">
+            <div class="title-breadcrumbs row-container">
+                <h1 id="title" class="title"> </h1><span><h1 class="active"></h1></span>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <div class="container-fluid ccc-options">
+            <div class="row row-container-inner">
+                <div class="col-md-9">
+                    <div class="orange-button"><div class="orange-border"><a href="products-order.html">Place Orders</a></div></div>
+                    <div class="orange-button"><div class="orange-border"><a href="products-manage.html">Manage Products</a></div></div>
+                    <div class="orange-button"><div class="orange-border download"><a href="#">Download Product Sheet Template</a></div></div>
+                </div>
+                <div class="col-md-3">
+                    <img class="download-image" src="images/big-grey-download-button.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Code for products -->
+        <section class="mobile">
+            <div class="container-fluid ccc-options-mobile">
+                <div class="row row-container">
+                    <div class="ccc-buttons-mobile product-buttons-mobile">
+                        <div class="orange-button">
+                            <div class="orange-border ccc-button-mobile-receiving">
+                                <a href="products-order.html">Place Orders</a>
+                            </div>
+                        </div>
+                        <div class="orange-button">
+                            <div class="orange-border ccc-button-mobile-receiving">
+                                <a href="products-manage.html">Manage Products</a>
+                            </div>
+                        </div>
+                        <div class="download-button">
+                            <div class="orange-border ccc-button-mobile-receiving">
+                                <a class="order-a" href="#">Download Product Sheet Template</a>
+                            </div>
+                        </div>
+                        <div class="under-product-buttons">
+                            <h4 class="t-center"><span class="active">IMPORTANT! </span>After you download and complete the Product Sheet in Excel format, please email completed sheet to <span class="active">help@capacityllc.com</span>.</h4>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        <!-- End Mobile Code -->
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-3.3.2.js"></script>
+
+        <!-- Script import for header -->
+        <script src="js/main.js"></script>
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

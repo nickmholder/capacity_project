@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orders -</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap-3.3.2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body>
+        <!-- This calls the header -->
+        <header header-html="header.html"></header>
+        <div class="container-fluid no-padding">
+            <div class="title-breadcrumbs row-container">
+                <div class="title-span">
+                    <h1 id="title" class="title"> </h1><span><h1 class="active">Pending Orders</h1></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body code goes here -->
+        <section id="trouble-orders">
+            <div class="container-fluid">
+                <div class="row row-container-inner screened-orange">
+                    <div class="col-md-12 mw-100">
+                        <div class="red-error-pending">
+                            <img src="images/red-error-large.png" alt="">
+                            <h3 class="m-auto">Indicates a possible short/overcommited product.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review-order-table" class="customer-history-table">
+            <div class="container-fluid no-padding-left no-padding-right">
+                <div class="order-trouble-table">
+                    <h1><span class="active">Pending Orders</span> Results</h1>
+                </div>
+                <div class="overflow">
+                    <div class="order-history-table">
+                        <div class="order-history-table-heading">
+                            <a href="#">Processing (4)</a>
+                            <a href="#">Shipped (7)</a>
+                            <a href="#">Status (3)</a>
+                        </div>
+                    </div>
+                    <table class="table table-responsive-md order-table pending-table">
+                        <thead class="thead-color">
+                            <tr>
+                                <th class="no-border-3"></th>
+                                <th class="arrow-down no-border-2" scope="col">Order #</th>
+                                <th class="no-border-2" scope="col">External Id</th>
+                                <th class="no-border-2" scope="col">PO #</th>
+                                <th class="no-border-2 order-table-text" scope="col">Order Source</th>
+                                <th class="w-20 no-border-2 order-table-text" scope="col">Business or Contact Name</th>
+                                <th class="no-border-2 order-table-text" scope="col">Rec'd Date</th>
+                                <th class="no-border-2 order-table-text w-5" scope="col">Rq Ship Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Ship Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Cancel Date</th>
+                                <th class="no-border-2 order-table-text" scope="col">Total $</th>
+                                <th class="no-border-2 order-table-text" scope="col">Inv #</th>
+                                <th class="no-border-3"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- New Row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917157</td>
+                                <td>220171031141917157</td>
+                                <td>Imported</td>
+                                <td>Emily Nicholas</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New Row -->
+                            <tr class="error-red">
+                                <td></td>
+                                <td class="red-error"><a class="red-error-before" href="#">CD1208094</a></td>
+                                <td>2220171031141917158</td>
+                                <td>220171031141917157</td>
+                                <td>Client Center</td>
+                                <td>Hassan Khan</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917159</td>
+                                <td>220171031141917157</td>
+                                <td>Client Center</td>
+                                <td>Emily Nichols</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                            <!-- New row -->
+                            <tr>
+                                <td></td>
+                                <td><a href="#">CD1208094</a></td>
+                                <td>220171031141917154</td>
+                                <td>220171031141917157</td>
+                                <td>Imported</td>
+                                <td>Hassan Khan</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>05/31</td>
+                                <td>1203456</td>
+                                <td></td>
+                            </tr>
+                            <!-- End row -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer id="cart">
+            <div class="container-fluid">
+                <div class="row row-container">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <div class="cart">
+                            <div class="cart-top-button">
+                                <div class="orange-border">
+                                    <a href="#">Export Details</a>
+                                </div>
+                            </div>
+                            <div class="cart-bottom-button">
+                                <div class="orange-border excel-button">
+                                    <a class="justify-content-center d-flex" href="#">Export Table to Excel</a>
+                                </div>
+                            </div>
+                            <a class="active arrow-left" href="orders-search.html">Back To Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- body code ends here -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="js/bootstrap-3.3.2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>
